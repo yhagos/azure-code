@@ -17,7 +17,7 @@ param vnetAName string
 param vnetAPrefix string
 
 module createNetworkPeeringfromB '1-resource_createNetworkPeeringfromB.bicep' = {
-  name: 'createNetworkPeeringfromB'
+  name:  'createNetworkPeering-from-${vnetBName}'
   params: {
     vnetBName: vnetBName
     variables_vnetBtoVnetAPeeringName: variables_vnetBtoVnetAPeeringName
