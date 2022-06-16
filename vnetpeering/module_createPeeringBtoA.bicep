@@ -16,7 +16,7 @@ param vnetAName string
 @description('Prefix of the first VNET')
 param vnetAPrefix string
 
-module createNetworkPeeringfromB '1-resource_createNetworkPeeringfromB.bicep' = {
+module createNetworkPeeringfromB 'resource_createNetworkPeeringfromB.bicep' = {
   name:  'createNetworkPeering-from-${vnetBName}'
   params: {
     vnetBName: vnetBName

@@ -27,16 +27,17 @@ param location string
 var vnetAtoVnetBPeeringName = '${vnetAName}-to-${vnetBName}'
 var vnetBtoVnetAPeeringName = '${vnetBName}-to-${vnetAName}'
 
-module createPeeringAtoB '1-module_createPeeringAtoB.bicep' = {
-  name: 'createPeering-${vnetAName}-to-${vnetBName}'
-  // scope: subscription(subscriptionAID)
+
+module createPeeringBtoA  'module_createPeeringBtoA.bicep' = {
+  name: 'createPeering-${vnetBName}-to-${vnetAName}'
+  // scope: subscription(subscriptionBID)
   params: {
-    variables_vnetAtoVnetBPeeringName: vnetAtoVnetBPeeringName
+    variables_vnetBtoVnetAPeeringName: vnetBtoVnetAPeeringName
     location: location
-    vnetAName: vnetAName
-    subscriptionBID: subscriptionBID
-    resourceGroupBName: resourceGroupBName
     vnetBName: vnetBName
-    vnetBPrefix: vnetBPrefix
+    subscriptionAID: subscriptionAID
+    resourceGroupAName: resourceGroupAName
+    vnetAName: vnetAName
+    vnetAPrefix: vnetAPrefix
   }
 }
