@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "nomlz"
+        },
+        "vnetAName": {
+            "value": "nomlz"
+        },
+        "vnetBName": {
+            "value": "hubvnet"
+        },
+        "vnetAPrefix": {
+            "value": "nomlz"
+        },
+        "vnetBPrefix": {
+            "value": "hubvnet"
+        },
+        "subscriptionAID": {
+            "value": "nomlz"
+        },
+        "resourceGroupAName": {
+            "value": "hubvnet"
+        },
+        "subscriptionBID": {
+            "value": "nomlz"
+        },
+        "resourceGroupBName": {
+            "value": "hubvnet"
+        }
+    }
+}
