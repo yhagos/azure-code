@@ -3,31 +3,31 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "nomlz"
+            "value": "eastus"
         },
         "vnetAName": {
-            "value": "nomlz"
+            "value": "vnet-subA-001"
         },
         "vnetBName": {
-            "value": "hubvnet"
+            "value": "vnet-subB-001"
         },
         "vnetAPrefix": {
-            "value": "nomlz"
+            "value": "10.0.0.0/24"
         },
         "vnetBPrefix": {
-            "value": "hubvnet"
+            "value": "10.1.0.0/24"
         },
         "subscriptionAID": {
-            "value": "nomlz"
+            "value": "fe56f593-a6bb-4f83-9e0d-0e8a8f7593cb"
         },
         "resourceGroupAName": {
-            "value": "hubvnet"
+            "value": "rg-subA-001"
         },
         "subscriptionBID": {
-            "value": "nomlz"
+            "value": "c92c4306-7102-407d-81b2-6d8b93e979de"
         },
         "resourceGroupBName": {
-            "value": "hubvnet"
+            "value": "rg-subB-001"
         }
     }
 }
