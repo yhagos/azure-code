@@ -11,12 +11,16 @@
 # az deployment group create  --resource-group  "$VNETWORKLOAD-rg" --template-file  ./main.peeringFromWorkload.bicep --parameters ./parameters/peering.parameters.json
 # az deployment group create --resource-group $VHUBRESOURCEGROUP --template-file ./main.peeringFromHub.bicep --parameters ./parameters/peering.parameters.json
 
+RGA=$1
+SUBAID=$2
+RGB=$3
+SUBBID=$4
 
 
-RGA="rg-subA-001"
-RGB="rg-subB-001"
-SUBAID="fe56f593-a6bb-4f83-9e0d-0e8a8f7593cb"
-SUBBID="c92c4306-7102-407d-81b2-6d8b93e979de"
+# RGA="rg-subA-001"
+# RGB="rg-subB-001"
+# SUBAID="fe56f593-a6bb-4f83-9e0d-0e8a8f7593cb"
+# SUBBID="c92c4306-7102-407d-81b2-6d8b93e979de"
 
 
  az account list
