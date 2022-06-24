@@ -5,7 +5,13 @@ SUBAID=$2
 RGB=$3
 SUBBID=$4
 
+# make sure both subsciptions exist
  az account list
+ az account show  --subscription  $SUBAID
+ az account show  --subscription  $SUBBID
+
+# make sure both resource groups exist
+
  az account set --subscription $SUBAID
  az deployment group create  --resource-group  $RGA --template-file  ./mainFromA.bicep --parameters ./main.parameters.json
  
@@ -20,9 +26,9 @@ SUBBID=$4
 
 
 
-=====================================================================
+======================================================================================================
 Old readme
-=====================================================================
+======================================================================================================
 
 #!/bin/bash
 

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workloadName": {
+        "value": "nomlz"
+      },    
+    "location": {
+        "value": "eastus"
+      },            
+    "workloadAddressPrefix": {
+      "value": "196.168.0.0/16"
+    },
+    "subnet1Prefix": {
+        "value": "196.168.0.0/24"
+      },
+    "subnet2Prefix": {
+        "value": "196.168.1.0/24"
+      },      
+    "subnet1Name": {
+        "value": "Subnet1"
+      },
+    "subnet2Name": {
+        "value": "Subnet2"
+      },
+    "hubvnetName": {
+        "value": "hubvnet"
+      },
+    "hubvnetId": {
+        "value": "/subscriptions/5db106ba-450b-406d-9bd6-42521f38b59c/resourceGroups/yonastest1/providers/Microsoft.Network/virtualNetworks/hubvnet"
+      },
+    "routeTableName": {
+        "value": "nomlzRouteTable2"
+      },      
+    "routeName": {
+        "value": "default_route"
+      },
+    "routeAddressPrefix": {
+        "value": "0.0.0.0/0"
+      },
+    "routeNextHopIpAddress": {
+        "value": "10.2.0.5"
+      },            
+    "routeNextHopType": {
+        "value": "VirtualAppliance"
+      }            
+    }
+  }
+
